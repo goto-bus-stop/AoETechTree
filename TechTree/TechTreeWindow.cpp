@@ -8,37 +8,38 @@
 #include "Game.h"
 #include "VanillaTechTreeRenderer.h"
 #include "GameDataHandler.h"
+#include "call_conventions.h"
 
 /* STATIC WRAPPER FUNCTIONS */
 
-static TechTreeWindow *__thiscall TechTreeWindow_Constructor(TechTreeWindow *self, Window *underlyingWindow, int unknownGameAndPlayerData, int selectedCivId) {
+static TechTreeWindow *THISCALL(TechTreeWindow_Constructor, TechTreeWindow *self, Window *underlyingWindow, int unknownGameAndPlayerData, int selectedCivId) {
   return self->Constructor(underlyingWindow, unknownGameAndPlayerData, selectedCivId);
 }
-static void __thiscall TechTreeWindow_ScalarDeletingDestructor(TechTreeWindow *self, char mode) {
+static void THISCALL(TechTreeWindow_ScalarDeletingDestructor, TechTreeWindow *self, char mode) {
   return self->ScalarDeletingDestructor(mode);
 }
-static void __thiscall TechTreeWindow_Draw(TechTreeWindow *self) {
+static void THISCALL(TechTreeWindow_Draw, TechTreeWindow *self) {
   return self->Draw();
 }
-static int __thiscall TechTreeWindow_HandleWindowsMessage(TechTreeWindow *self, HWND hWnd, signed int msg, WPARAM wParam, LPARAM lParam) {
+static int THISCALL(TechTreeWindow_HandleWindowsMessage, TechTreeWindow *self, HWND hWnd, signed int msg, WPARAM wParam, LPARAM lParam) {
   return self->HandleWindowsMessage(hWnd, msg, wParam, lParam);
 }
-static int __thiscall TechTreeWindow_DoUpdate(TechTreeWindow *self) {
+static int THISCALL(TechTreeWindow_DoUpdate, TechTreeWindow *self) {
   return self->DoUpdate();
 }
-static int __thiscall TechTreeWindow_HandleUserMessage(TechTreeWindow *self, WPARAM wParam, LPARAM lParam) {
+static int THISCALL(TechTreeWindow_HandleUserMessage, TechTreeWindow *self, WPARAM wParam, LPARAM lParam) {
   return self->HandleUserMessage(wParam, lParam);
 }
-static int __thiscall TechTreeWindow_HandleMouseButtonDown(TechTreeWindow *self, int buttonId, int cursorPosX, int cursorPosY, int controlKeyPressed, int shiftKeyPressed) {
+static int THISCALL(TechTreeWindow_HandleMouseButtonDown, TechTreeWindow *self, int buttonId, int cursorPosX, int cursorPosY, int controlKeyPressed, int shiftKeyPressed) {
   return self->HandleMouseButtonDown(buttonId, cursorPosX, cursorPosY, controlKeyPressed, shiftKeyPressed);
 }
-static int __thiscall TechTreeWindow_HandleMouseMove(TechTreeWindow *self, int cursorPosX, int cursorPosY, int controlKeyPressed, int shiftKeyPressed) {
+static int THISCALL(TechTreeWindow_HandleMouseMove, TechTreeWindow *self, int cursorPosX, int cursorPosY, int controlKeyPressed, int shiftKeyPressed) {
   return self->HandleMouseMove(cursorPosX, cursorPosY, controlKeyPressed, shiftKeyPressed);
 }
-static int __thiscall TechTreeWindow_HandleKeyDown2(TechTreeWindow *self, int keyDown, int lParam, int menuKeyDown, int controlKeyDown, int shiftKeyDown) {
+static int THISCALL(TechTreeWindow_HandleKeyDown2, TechTreeWindow *self, int keyDown, int lParam, int menuKeyDown, int controlKeyDown, int shiftKeyDown) {
   return self->HandleKeyDown2(keyDown, lParam, menuKeyDown, controlKeyDown, shiftKeyDown);
 }
-static int __thiscall TechTreeWindow_HandleChildControlEvent(TechTreeWindow *self, Control *triggeringControl, int code, int data1, int data2) {
+static int THISCALL(TechTreeWindow_HandleChildControlEvent, TechTreeWindow *self, Control *triggeringControl, int code, int data1, int data2) {
   return self->HandleChildControlEvent(triggeringControl, code, data1, data2);
 }
 

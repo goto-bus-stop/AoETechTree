@@ -1,8 +1,8 @@
 /* INCLUDES */
 
 // Class header
-#define CLASS TechTreeData
 #include "TechTreeData.h"
+#include "call_conventions.h"
 
 // C++ string class
 #include <string>
@@ -10,10 +10,10 @@
 
 /* STATIC WRAPPER FUNCTIONS */
 
-static void __thiscall TechTreeData_Constructor(TechTreeData *self, int datFileHandle) {
+static void THISCALL(TechTreeData_Constructor, TechTreeData *self, int datFileHandle) {
   return self->Constructor(datFileHandle);
 }
-static void __thiscall TechTreeData_Destructor(TechTreeData *self) {
+static void THISCALL(TechTreeData_Destructor, TechTreeData *self) {
   return self->Destructor();
 }
 
