@@ -1,10 +1,10 @@
 /* INCLUDES */
 
 // Class header
-#define CLASS TechTreeWindow
 #include "TechTreeWindow.h"
 
 // Other includes
+#include <mmsystem.h>
 #include "Game.h"
 #include "VanillaTechTreeRenderer.h"
 #include "GameDataHandler.h"
