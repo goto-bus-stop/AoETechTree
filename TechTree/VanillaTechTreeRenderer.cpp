@@ -139,7 +139,7 @@ VanillaTechTreeRenderer::~VanillaTechTreeRenderer()
 	delete[] _ageLabelRectangles;
 }
 
-void VanillaTechTreeRenderer::Draw(DirectDrawBufferData *drawBuffer, int offsetX, int offsetY)
+void VanillaTechTreeRenderer::Draw(DirectDrawArea *drawBuffer, int offsetX, int offsetY)
 {
 	// Set player color palette offset (16 + x, where x is 0, 16, 32, 48, 64, 80, 96 or 112)
 	// Default is blue (16)
@@ -208,7 +208,7 @@ void VanillaTechTreeRenderer::Draw(DirectDrawBufferData *drawBuffer, int offsetX
 	drawBuffer->DeleteGdiContext();
 }
 
-void VanillaTechTreeRenderer::DrawPopupLabelBox(DirectDrawBufferData *drawBuffer, int x, int y)
+void VanillaTechTreeRenderer::DrawPopupLabelBox(DirectDrawArea *drawBuffer, int x, int y)
 {
 	// Lock surface of draw buffer
 	drawBuffer->LockAssociatedSurface(1);
@@ -298,7 +298,7 @@ void VanillaTechTreeRenderer::DrawPopupLabelBox(DirectDrawBufferData *drawBuffer
 	drawBuffer->DeleteGdiContext();
 }
 
-void VanillaTechTreeRenderer::RenderSubTree(TechTreeElement *element, DirectDrawBufferData *drawBuffer, int offsetX, int offsetY)
+void VanillaTechTreeRenderer::RenderSubTree(TechTreeElement *element, DirectDrawArea *drawBuffer, int offsetX, int offsetY)
 {
 	// Element hidden?
 	if(element->_renderState == TechTreeElement::ItemRenderState::Hidden)

@@ -8,7 +8,7 @@
 /* DEFINITIONS */
 
 #pragma pack(push, 1)
-// Represents an unknown class type with a length of 1064 bytes. It is related to the DirectDrawBufferData class and widely used.
+// Represents an unknown class type with a length of 1064 bytes. It is related to the DirectDrawArea class and widely used.
 class Unknown1064ByteDirectDrawRelatedClass : public GameType
 {
 protected: // Member variables

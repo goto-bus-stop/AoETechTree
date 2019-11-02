@@ -23,8 +23,8 @@ int SlpFileElement::GetFrameSize(int frameId, int *widthPointer, int *heightPoin
 	return ((int(__thiscall *)(SlpFileElement *, int, int *, int *))0x004DB290)(this, frameId, widthPointer, heightPointer);
 }
 
-bool SlpFileElement::DrawFrameIntoDirectDrawBuffer(DirectDrawBufferData *directDrawBufferData, int anchorX, int anchorY, int frameId, int unknown)
+bool SlpFileElement::DrawFrameIntoDirectDrawBuffer(DirectDrawArea *directDrawBufferData, int anchorX, int anchorY, int frameId, int unknown)
 {
 	// Call original function
-	return ((bool(__thiscall *)(SlpFileElement *, DirectDrawBufferData *, int, int, int, int))0x004DB740)(this, directDrawBufferData, anchorX, anchorY, frameId, unknown);
+	return ((bool(__thiscall *)(SlpFileElement *, DirectDrawArea *, int, int, int, int))0x004DB740)(this, directDrawBufferData, anchorX, anchorY, frameId, unknown);
 }

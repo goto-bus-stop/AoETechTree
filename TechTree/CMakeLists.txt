@@ -8,8 +8,8 @@ set(SOURCE_FILES
   ComboBoxControl.cpp
   Control.cpp
   ControlListElement.cpp
-  DirectDrawBufferData.cpp
-  DirectDrawBufferDataListElement.cpp
+  DirectDrawArea.cpp
+  DirectDrawAreaNode.cpp
   DirectDrawHandler.cpp
   DropDownButtonControl.cpp
   FontData.cpp

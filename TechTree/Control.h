@@ -8,7 +8,7 @@
 
 // Other includes
 #include "ControlListElement.h"
-#include "DirectDrawBufferData.h"
+#include "DirectDrawArea.h"
 #include "AnotherControlRelatedClass.h"
 #include "DrawUtilities.h"
 
@@ -45,7 +45,7 @@ protected: // Member variables
 	int _width1;
 	int _height1;
 	char *_controlTypeName;
-	DirectDrawBufferData *_backBufferData;
+	DirectDrawArea *_backBufferData;
 	RECT _clientRectangle;
 	int _maybeBiggerThanScreen;
 	int _maybeStillNeedsToBeDrawn;
@@ -155,7 +155,7 @@ class ControlVTable : public VTableType
 {
 public: // Function pointers
 	void(__thiscall *ScalarDeletingDestructor)(Control *, char mode);
-	int(__thiscall *SetDrawDataAndCreateChildListElement)(Control *, DirectDrawBufferData *, Control *, int, int, int, int, int);
+	int(__thiscall *SetDrawDataAndCreateChildListElement)(Control *, DirectDrawArea *, Control *, int, int, int, int, int);
 	void(__thiscall *AssignRectangleDataAndCreateDrawRegion)(Control *, int, int, int, int);
 	void(__thiscall *AssignSizeDataAndCreateDrawRegion)(Control *, int, int, int, int);
 	void(__thiscall *AssignBackgroundColorAndRedraw)(Control *, BYTE);
@@ -206,7 +206,7 @@ public: // Function pointers
 	void(__thiscall *SetSelectionState)(Control *, int);
 	DWORD SetTabInformation;
 	DWORD AssignTabInformationToControlArray;
-	DirectDrawBufferData *(__thiscall *GetBackBufferData)(Control *);
+	DirectDrawArea *(__thiscall *GetBackBufferData)(Control *);
 	DWORD _func3;
 	DWORD _func4;
 	int(__thiscall *UnknownRecursiveChildrenCheck)(Control *);

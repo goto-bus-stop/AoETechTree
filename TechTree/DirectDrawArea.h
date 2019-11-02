@@ -9,7 +9,7 @@
 #include <ddraw.h>
 
 // Other includes
-#include "DirectDrawBufferDataListElement.h"
+#include "DirectDrawAreaNode.h"
 #include "Unknown1064ByteDirectDrawRelatedClass.h"
 
 /* DEFINITIONS */
@@ -19,7 +19,7 @@ class DirectDrawHandler;
 
 #pragma pack(push, 1)
 // Represents an DirectDraw buffer handler.
-class DirectDrawBufferData : public GameType
+class DirectDrawArea : public GameType
 {
 protected: // Member variables
 	DirectDrawHandler *_directDrawHandler;
@@ -36,7 +36,7 @@ protected: // Member variables
 	HDC _gdiContext;
 	IDirectDrawSurface *_associatedDirectDrawSurface;
 	DDSURFACEDESC _associatedDirectDrawSurfaceDesc;
-	DirectDrawBufferDataListElement *_listElement;
+	DirectDrawAreaNode *_listElement;
 	char *_name;
 	DWORD _dwordB4;
 	BYTE _gapB8[4];
@@ -64,10 +64,10 @@ public:
 	// Parameters:
 	// -> name: The buffer name.
 	// -> unknown: Unknown.
-	DirectDrawBufferData(char *name, int unknown);
+	DirectDrawArea(char *name, int unknown);
 
 	// Destructor.
-	~DirectDrawBufferData();
+	~DirectDrawArea();
 
 	// Locks the DirectDraw surface memory for drawing operations.
 	// Parameters:
@@ -113,7 +113,7 @@ public:
 	// -> yTop: Unknown.
 	// -> childRect: Unknown.
 	// -> unknown: Unknown.
-	void sub_5A31E0(DirectDrawBufferData *backBuffer, int xLeft, int yTop, RECT *childRect, int unknown);
+	void sub_5A31E0(DirectDrawArea *backBuffer, int xLeft, int yTop, RECT *childRect, int unknown);
 
 	// Gets the associated GDI context.
 	HDC CreateGdiContext();

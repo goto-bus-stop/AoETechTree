@@ -120,7 +120,7 @@ public:
 	// -> unknown4: Unknown.
 	// -> maxLineLength: The maximum allowed line length (else force word wrap).
 	// -> text: Initial text.
-	int sub_5444B0(DirectDrawBufferData *parentControlBackBuffer, Control *parentControl, int posX, int posY, int width, int height, HFONT *fonts, int maximumCharWidth, int maximumCharHeight, char *slpFileName, int unknown1, char unknown2, int unknown3, char unknown4, short maxLineLength, char *text);
+	int sub_5444B0(DirectDrawArea *parentControlBackBuffer, Control *parentControl, int posX, int posY, int width, int height, HFONT *fonts, int maximumCharWidth, int maximumCharHeight, char *slpFileName, int unknown1, char unknown2, int unknown3, char unknown4, short maxLineLength, char *text);
 
 	// Sets the text alignment.
 	// Parameters:

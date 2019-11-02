@@ -67,7 +67,7 @@ protected: // Member variables
 	int _unknownBGValue1;
 	HGDIOBJ _blackBrush;
 	int _unknownBGValue2;
-	DirectDrawBufferData *_windowDirectDrawBuffer;
+	DirectDrawArea *_windowDirectDrawBuffer;
 	char _unknown7c1[12];
 	LabelControl *_maybeHelpTextLabel;
 	int _helpTextCount;

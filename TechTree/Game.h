@@ -8,7 +8,7 @@
 
 // Other includes
 #include "DirectDrawHandler.h"
-#include "DirectDrawBufferData.h"
+#include "DirectDrawArea.h"
 #include "SlpFileElement.h"
 #include "GameDataHandler.h"
 #include "FontData.h"
@@ -43,7 +43,7 @@ protected: // Member variables
 	int _errorCode;
 	int _unknown50SecondTimerHandle;
 	DirectDrawHandler *_directDrawHandler;
-	DirectDrawBufferData *_backBufferData;
+	DirectDrawArea *_backBufferData;
 	int _unknownValue2a1;
 	int _useGameMouseCursors;
 	short _specialSymbolCount;
@@ -110,7 +110,7 @@ protected: // Member variables
 	char _unknown6a1b[9];
 	char _unknown6a1c;
 	char _unknown6a1d;
-	DirectDrawBufferData *_diamondMapSaveAreaBufferData;
+	DirectDrawArea *_diamondMapSaveAreaBufferData;
 	char _gameZoneCallCommand[255];
 	char _httpShellCommand[257];
 	int _unknown6a1e;

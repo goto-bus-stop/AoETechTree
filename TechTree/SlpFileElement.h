@@ -8,7 +8,7 @@
 // Other includes
 #include "SlpFile.h"
 #include "SlpFrameHeader.h"
-#include "DirectDrawBufferData.h"
+#include "DirectDrawArea.h"
 
 /* DEFINITIONS */
 
@@ -49,6 +49,6 @@ public:
 	// -> anchorY: The buffer Y position where the frame anchor point should be.
 	// -> frameId: The ID of the frame.
 	// -> unknown: Unknown.
-	bool DrawFrameIntoDirectDrawBuffer(DirectDrawBufferData *directDrawBufferData, int anchorX, int anchorY, int frameId, int unknown);
+	bool DrawFrameIntoDirectDrawBuffer(DirectDrawArea *directDrawBufferData, int anchorX, int anchorY, int frameId, int unknown);
 };
 #pragma pack(pop)

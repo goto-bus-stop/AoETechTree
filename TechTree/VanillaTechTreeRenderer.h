@@ -157,14 +157,14 @@ public:
 	// -> drawBuffer: The buffer the tree should be rendered to.
 	// -> offsetX: The X position of the left screen side (> 0 => scroll right).
 	// -> offsetY: The Y position of the top screen side (> 0 => scroll down).
-	virtual void Draw(DirectDrawBufferData *drawBuffer, int offsetX, int offsetY);
+	virtual void Draw(DirectDrawArea *drawBuffer, int offsetX, int offsetY);
 
 	// Draws the popup label box at the given pixel coordinates.
 	// Parameters:
 	// -> drawBuffer: The buffer the box should be rendered to.
 	// -> x: The X position of the popup label box.
 	// -> y: The Y position of the popup label box.
-	virtual void DrawPopupLabelBox(DirectDrawBufferData *drawBuffer, int x, int y);
+	virtual void DrawPopupLabelBox(DirectDrawArea *drawBuffer, int x, int y);
 
 	// Sets the currently selected civ.
 	virtual void SetCurrentCiv(int civId);
@@ -184,7 +184,7 @@ public:
 	// -> drawBuffer: The buffer the sub tree should be rendered to.
 	// -> offsetX: The X position of the left screen side (> 0 => scroll right).
 	// -> offsetY: The Y position of the top screen side (> 0 => scroll down).
-	void RenderSubTree(TechTreeElement *element, DirectDrawBufferData *drawBuffer, int offsetX, int offsetY);
+	void RenderSubTree(TechTreeElement *element, DirectDrawArea *drawBuffer, int offsetX, int offsetY);
 
 	// Returns the full width of the tree (including margins).
 	virtual int GetFullWidth();

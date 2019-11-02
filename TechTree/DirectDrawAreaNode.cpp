@@ -1,6 +1,6 @@
 /* INCLUDES */
 
 // Class header
-#include "DirectDrawBufferDataListElement.h"
+#include "DirectDrawAreaNode.h"
 
 /* FUNCTIONS */
