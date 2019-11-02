@@ -4,7 +4,7 @@
 
 // Windows main header
 #define NOMINMAX
-#include <Windows.h>
+#include <windows.h>
 
 // Code cave functions
 #include "functions.h"

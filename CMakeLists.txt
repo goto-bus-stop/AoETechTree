@@ -25,7 +25,6 @@ if (IS_RELEASE)
 endif()
 
 add_compile_definitions(WINVER=0x0501)
-add_compile_definitions(WIN32_LEAN_AND_MEAN)
 
 if(MSVC)
   foreach(flag_var
