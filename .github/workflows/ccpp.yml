@@ -33,3 +33,14 @@ jobs:
       with:
         name: AoETechTree-release
         path: artifact
+
+  linux:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+    - name: Install compilers
+      run: sudo apt-get install i686-w64-mingw32-g++
+    - name: Prepare debug DLL
+      run: cmake -B build -S . -DCMAKE_BUILD_TYPE=Debug -DCMAKE_C_COMPILER=`which i686-w64-mingw32-gcc` -DCMAKE_CXX_COMPILER=`which i686-w64-mingw32-g++`
+    - name: Build debug DLL
+      run: cmake --build build --verbose
