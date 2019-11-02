@@ -6,7 +6,7 @@
 #include "Control.h"
 
 // Other includes
-#include "SlpFileElement.h"
+#include "Shape.h"
 #include "UnknownPaletteRelatedClass.h"
 #include "LabelControl.h"
 #include "ButtonControl.h"
@@ -31,8 +31,8 @@ protected: // Member variables
 	int _minimumWindowHeight;
 	char _styleResourceName[260];
 	int _styleResourceId;
-	SlpFileElement *_backgroundSlpFileElement1;
-	SlpFileElement *_backgroundSlpFileElement2;
+	Shape *_backgroundSlpFileElement1;
+	Shape *_backgroundSlpFileElement2;
 	HPALETTE _palette;
 	char _cursorsFileName[260];
 	int _cursorsFileResourceId;
@@ -58,7 +58,7 @@ protected: // Member variables
 	int _unknownValue7ab3;
 	char _popupDialogStyleResourceName[260];
 	int _popupDialogStyleResourceId;
-	SlpFileElement *_styleButtonSlp;
+	Shape *_styleButtonSlp;
 	UnknownPaletteRelatedClass *_unknownPaletteThings;
 	int _shadeAmountPercentage;
 	char _styleBackgroundColor1;

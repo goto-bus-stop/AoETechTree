@@ -14,7 +14,7 @@
 
 #pragma pack(push, 1)
 // Represents an SLP file element.
-class SlpFileElement : public GameType
+class Shape : public GameType
 {
 protected: // Member variables
 	int SlpDataArrayWasAllocated;
@@ -30,10 +30,10 @@ public:
 	// Parameters:
 	// -> slpName: The name of the SLP file (usually optional).
 	// -> slpId: The resource ID of the SLP file.
-	SlpFileElement(const char *slpName, int slpId);
+	Shape(const char *slpName, int slpId);
 
 	// Destructor.
-	~SlpFileElement();
+	~Shape();
 
 	// Gets the size of the frame with the given index.
 	// Parameter:

@@ -6,7 +6,7 @@
 #include "TechTreeRenderer.h"
 
 // Other includes
-#include "SlpFileElement.h"
+#include "Shape.h"
 #include "FontData.h"
 #include <stack>
 #include <vector>
@@ -31,22 +31,22 @@ protected: // Member variables
 	const TechTreeDesign *_designData;
 
 	// The research icons.
-	SlpFileElement *_researchIcons;
+	Shape *_researchIcons;
 
 	// The creatable unit icons.
-	SlpFileElement *_creatableIcons;
+	Shape *_creatableIcons;
 
 	// The building icons.
-	SlpFileElement *_buildingIcons;
+	Shape *_buildingIcons;
 
 	// The element node graphics.
-	SlpFileElement *_nodeGraphics;
+	Shape *_nodeGraphics;
 
 	// The element node caption font.
 	FontData *_nodeFont;
 
 	// The SLP containing the legend and the ages bar.
-	SlpFileElement *_legendAndAgesSlp;
+	Shape *_legendAndAgesSlp;
 
 	// The index of the legend frame for the current resolution.
 	int _legendFrameIndex;
@@ -67,7 +67,7 @@ protected: // Member variables
 	int _agesFrameHeight;
 
 	// The SLP containing the background tiles.
-	SlpFileElement *_tileSlp;
+	Shape *_tileSlp;
 
 	// The index of the background tile frame for the current resolution.
 	int _tileFrameIndex;
@@ -79,7 +79,7 @@ protected: // Member variables
 	int _tileFrameHeight;
 
 	// The SLP containing the "disable" symbol of the legend.
-	SlpFileElement *_legendDisableSlp;
+	Shape *_legendDisableSlp;
 
 	// The draw position of the legend "disable" symbol for the current resolution.
 	Point _legendDisableSlpDrawPosition;

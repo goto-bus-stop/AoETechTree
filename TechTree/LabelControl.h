@@ -6,7 +6,7 @@
 #include "Control.h"
 
 // Other includes
-#include "SlpFileElement.h"
+#include "Shape.h"
 #include "LabelLineData.h"
 #include "ScrollBarControl.h"
 
@@ -44,7 +44,7 @@ protected: // Member variables
 	int _maybeAutoSize_ProbablyWrong;
 	short _maxLineLength;
 	char _unknown100c[10];
-	SlpFileElement *_unknownSlpFile;
+	Shape *_unknownSlpFile;
 	short _firstFrameWidth;
 	short _firstFrameHeight;
 	char _unknown100d[24];

@@ -136,7 +136,7 @@ TechTreeWindow *TechTreeWindow::Constructor(Window *underlyingWindow, int unknow
 	_scrollRightButtonDrawBuffer->sub_5A30A0(0, 0, _designData->_scrollRightButtonRelativeRectangle.Width, _designData->_scrollRightButtonRelativeRectangle.Height);
 
 	// Load arrow SLP for scroll buttons and assign frames to them
-	_arrowSlp = new SlpFileElement(_designData->_scrollSlpFileName, _designData->_scrollSlpId);
+	_arrowSlp = new Shape(_designData->_scrollSlpFileName, _designData->_scrollSlpId);
 	_scrollLeftButton->SetBackgroundSlpAtIndex(0, _arrowSlp, 1);
 	_scrollLeftButton->SetDisplayMode(9);
 	_scrollLeftButton->AssignLabelString(0, "");

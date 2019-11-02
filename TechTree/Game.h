@@ -9,7 +9,7 @@
 // Other includes
 #include "DirectDrawHandler.h"
 #include "DirectDrawArea.h"
-#include "SlpFileElement.h"
+#include "Shape.h"
 #include "GameDataHandler.h"
 #include "FontData.h"
 
@@ -48,7 +48,7 @@ protected: // Member variables
 	int _useGameMouseCursors;
 	short _specialSymbolCount;
 	short _unknownValue2a;
-	SlpFileElement **_specialSymbols;
+	Shape **_specialSymbols;
 	int _directSoundHandler;
 	int _backgroundMusicHandler;
 	int _interfaceSoundFileCount;

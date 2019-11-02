@@ -57,7 +57,7 @@ protected: // Member variables
 	DirectDrawArea *_scrollRightButtonDrawBuffer;
 
 	// The arrow SLP for the scroll buttons.
-	SlpFileElement *_arrowSlp;
+	Shape *_arrowSlp;
 
 	// The label where the civ information and bonuses are shown.
 	LabelControl *_civBonusLabel;
