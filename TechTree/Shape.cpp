@@ -5,13 +5,13 @@
 
 /* FUNCTIONS */
 
-Shape::SlpFileElement(const char *slpName, int slpId)
+Shape::Shape(const char *slpName, int slpId)
 {
 	// Call original function
-	((Shape *(__thiscall *)(SlpFileElement *, const char *, int))0x004DAE00)(this, slpName, slpId);
+	((Shape *(__thiscall *)(Shape *, const char *, int))0x004DAE00)(this, slpName, slpId);
 }
 
-Shape::~SlpFileElement()
+Shape::~Shape()
 {
 	// Call original function
 	((void(__thiscall *)(Shape *))0x004DB110)(this);
