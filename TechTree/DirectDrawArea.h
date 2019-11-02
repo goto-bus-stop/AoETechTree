@@ -10,7 +10,7 @@
 
 // Other includes
 #include "DirectDrawAreaNode.h"
-#include "Unknown1064ByteDirectDrawRelatedClass.h"
+#include "BitmapInfo.h"
 
 /* DEFINITIONS */
 
@@ -25,7 +25,7 @@ protected: // Member variables
 	DirectDrawHandler *_directDrawHandler;
 	HWND _mainWindowHWnd;
 	char *_lockedSurfaceMemoryAddress;
-	Unknown1064ByteDirectDrawRelatedClass *_unknown1064ByteStructPointer;
+	BITMAPINFO256 *_bitmapInfo;
 	HGDIOBJ _unknownGdiObject2;
 	HGDIOBJ _unknownGdiObject1;
 	int _width;

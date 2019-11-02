@@ -3,6 +3,7 @@ include_directories(include)
 set(SOURCE_FILES
   AnotherControlRelatedClass.cpp
   BaseUnitData.cpp
+  BitmapInfo.cpp
   ButtonControl.cpp
   CivData.cpp
   ComboBoxControl.cpp
@@ -22,8 +23,8 @@ set(SOURCE_FILES
   ResearchData.cpp
   ResearchDataItem.cpp
   ScrollBarControl.cpp
+  Shape.cpp
   SlpFile.cpp
-  SlpFileElement.cpp
   SlpFrameHeader.cpp
   StaticControlContainer.cpp
   TechTree.cpp
@@ -34,7 +35,6 @@ set(SOURCE_FILES
   TechTreeWindow.cpp
   TextBoxControl.cpp
   TextFormatData.cpp
-  Unknown1064ByteDirectDrawRelatedClass.cpp
   UnknownPaletteRelatedClass.cpp
   VanillaTechTreeRenderer.cpp
   Window.cpp
