@@ -24,6 +24,10 @@ if (IS_RELEASE)
   endif()
 endif()
 
+if(CMAKE_GENERATOR MATCHES "Ninja")
+  add_compile_options(-fdiagnostics-color)
+endif()
+
 add_compile_definitions(WINVER=0x0501)
 add_compile_definitions(NOMINMAX)
 add_compile_definitions(WIN32_LEAN_AND_MEAN)
