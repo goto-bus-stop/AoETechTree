@@ -1,7 +1,6 @@
 include_directories(include)
 
 set(SOURCE_FILES
-  AnotherControlRelatedClass.cpp
   BaseUnitData.cpp
   BitmapInfo.cpp
   ButtonControl.cpp

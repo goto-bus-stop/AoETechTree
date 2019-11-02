@@ -87,7 +87,6 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="AnotherControlRelatedClass.cpp" />
     <ClCompile Include="BaseUnitData.cpp" />
     <ClCompile Include="BitmapInfo.cpp" />
     <ClCompile Include="ButtonControl.cpp" />
@@ -127,7 +126,6 @@
     <ClCompile Include="functions.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="AnotherControlRelatedClass.h" />
     <ClInclude Include="BaseUnitData.h" />
     <ClInclude Include="BitmapInfo.h" />
     <ClInclude Include="ButtonControl.h" />

@@ -9,7 +9,6 @@
 // Other includes
 #include "ControlListElement.h"
 #include "DirectDrawArea.h"
-#include "AnotherControlRelatedClass.h"
 #include "DrawUtilities.h"
 
 /* DEFINITIONS */
@@ -38,8 +37,8 @@ public:
 	ControlVTable *_VTable;
 
 protected: // Member variables
-	Control *_underlyingWindowInformation;
-	Control *_unknownWindowInformation1;
+	Control *_previousControl;
+	Control *_previousModal;
 	int _positionX2;
 	int _positionY2;
 	int _width1;
@@ -51,10 +50,10 @@ protected: // Member variables
 	int _maybeStillNeedsToBeDrawn;
 	Control *_currentSelectedSubElement;
 	Control *_parentWindow;
-	AnotherControlRelatedClass *_aWRS1;
-	AnotherControlRelatedClass *_aWRS2;
-	AnotherControlRelatedClass *_aWRS3;
-	AnotherControlRelatedClass *_aWRS4;
+	Control *_leftControl;
+	Control *_topControl;
+	Control *_rightControl;
+	Control *_bottomControl;
 	ControlListElement *_controlListElement;
 	ControlListElement *_childControlListBegin;
 	ControlListElement *_childControlListEnd;
