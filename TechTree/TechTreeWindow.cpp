@@ -36,7 +36,7 @@ static int __thiscall TechTreeWindow_HandleMouseMove(TechTreeWindow *self, int c
   return self->HandleMouseMove(cursorPosX, cursorPosY, controlKeyPressed, shiftKeyPressed);
 }
 static int __thiscall TechTreeWindow_HandleKeyDown2(TechTreeWindow *self, int keyDown, int lParam, int menuKeyDown, int controlKeyDown, int shiftKeyDown) {
-  return self->HandleKeyDown2(keyDown, lParam, cursorPosY, controlKeyDown, shiftKeyDown);
+  return self->HandleKeyDown2(keyDown, lParam, menuKeyDown, controlKeyDown, shiftKeyDown);
 }
 static int __thiscall TechTreeWindow_HandleChildControlEvent(TechTreeWindow *self, Control *triggeringControl, int code, int data1, int data2) {
   return self->HandleChildControlEvent(triggeringControl, code, data1, data2);

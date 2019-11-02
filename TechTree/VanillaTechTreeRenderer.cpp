@@ -13,7 +13,7 @@
 
 /* FUNCTIONS */
 
-VanillaTechTreeRenderer::VanillaTechTreeRenderer(GameDataHandler *gameData, Size &windowSize, int unknownGameAndPlayerData)
+VanillaTechTreeRenderer::VanillaTechTreeRenderer(GameDataHandler *gameData, Size windowSize, int unknownGameAndPlayerData)
 	: TechTreeRenderer(gameData, unknownGameAndPlayerData)
 {
 	// Get design data
