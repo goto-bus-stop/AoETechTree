@@ -5,6 +5,7 @@ set(SOURCE_FILES
   BitmapInfo.cpp
   ButtonControl.cpp
   CivData.cpp
+  ColorTable.cpp
   ComboBoxControl.cpp
   Control.cpp
   ControlListElement.cpp
@@ -34,7 +35,6 @@ set(SOURCE_FILES
   TechTreeWindow.cpp
   TextBoxControl.cpp
   TextFormatData.cpp
-  UnknownPaletteRelatedClass.cpp
   VanillaTechTreeRenderer.cpp
   Window.cpp
   functions.cpp

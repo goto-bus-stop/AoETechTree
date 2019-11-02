@@ -91,6 +91,7 @@
     <ClCompile Include="BitmapInfo.cpp" />
     <ClCompile Include="ButtonControl.cpp" />
     <ClCompile Include="CivData.cpp" />
+    <ClCompile Include="ColorTable.cpp" />
     <ClCompile Include="ComboBoxControl.cpp" />
     <ClCompile Include="Control.cpp" />
     <ClCompile Include="ControlListElement.cpp" />
@@ -120,7 +121,6 @@
     <ClCompile Include="TechTreeWindow.cpp" />
     <ClCompile Include="TextBoxControl.cpp" />
     <ClCompile Include="TextFormatData.cpp" />
-    <ClCompile Include="UnknownPaletteRelatedClass.cpp" />
     <ClCompile Include="VanillaTechTreeRenderer.cpp" />
     <ClCompile Include="Window.cpp" />
     <ClCompile Include="functions.cpp" />
@@ -130,6 +130,7 @@
     <ClInclude Include="BitmapInfo.h" />
     <ClInclude Include="ButtonControl.h" />
     <ClInclude Include="CivData.h" />
+    <ClInclude Include="ColorTable.h" />
     <ClInclude Include="ComboBoxControl.h" />
     <ClInclude Include="Control.h" />
     <ClInclude Include="ControlListElement.h" />
@@ -160,7 +161,6 @@
     <ClInclude Include="TechTreeWindow.h" />
     <ClInclude Include="TextBoxControl.h" />
     <ClInclude Include="TextFormatData.h" />
-    <ClInclude Include="UnknownPaletteRelatedClass.h" />
     <ClInclude Include="VTableType.h" />
     <ClInclude Include="VanillaTechTreeRenderer.h" />
     <ClInclude Include="Window.h" />

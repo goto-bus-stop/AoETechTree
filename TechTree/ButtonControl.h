@@ -7,7 +7,6 @@
 
 // Other includes
 #include "Shape.h"
-#include "UnknownPaletteRelatedClass.h"
 #include "LabelControl.h"
 
 /* DEFINITIONS */

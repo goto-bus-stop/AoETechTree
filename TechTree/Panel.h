@@ -7,7 +7,7 @@
 
 // Other includes
 #include "Shape.h"
-#include "UnknownPaletteRelatedClass.h"
+#include "ColorTable.h"
 #include "LabelControl.h"
 #include "ButtonControl.h"
 #include "TextBoxControl.h"
@@ -59,7 +59,7 @@ protected: // Member variables
 	char _popupDialogStyleResourceName[260];
 	int _popupDialogStyleResourceId;
 	Shape *_styleButtonSlp;
-	UnknownPaletteRelatedClass *_unknownPaletteThings;
+	ColorTable *_shadowTable;
 	int _shadeAmountPercentage;
 	char _styleBackgroundColor1;
 	char _styleBackgroundColor2;
